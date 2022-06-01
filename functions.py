@@ -15,7 +15,7 @@ def ran_sleep():
     time.sleep(sleep_time)
 
 def login(id, pw):
-    driver = webdriver.Chrome(r'C:\Users\user\Documents\chromedriver_win32\chromedriver') # 가상 드라이버 열기
+    driver = webdriver.Chrome(r'chromedriver') # 가상 드라이버 열기
     driver.implicitly_wait(1)
 
     driver.get('https://everytime.kr/login') # 로그인 페이지로 이동
@@ -35,7 +35,7 @@ def get_review(driver, class_num):
         soup = BeautifulSoup(html, 'html.parser')
         #print(soup.prettify)
         reviews = soup.select('p.text') # p(paragraph)에서 class 명이 text인 것만 뽑음(복수 개))
-        print(reviews)
+        #print(reviews)
 
         if len(reviews) == 0:
             continue
