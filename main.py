@@ -53,3 +53,4 @@ print("="*15, "분석 결과", "="*15)
 print("긍정적 강의평", round(pos * 100 / (pos + neg), 2), "% (", pos, "개 )")
 print("부정적 강의평", round(neg * 100 / (pos + neg), 2), "% (", neg, "개 )")
  
+file.close()
