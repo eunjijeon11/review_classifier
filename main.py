@@ -41,8 +41,8 @@ for token_review in token_list:
         else:
             neg_p *= 1 / (sum(neg_bow) + 1)
 
-    pos_p *= 299 / 383
-    neg_p *= 84 / 383
+    pos_p *= 230 / 314
+    neg_p *= 84 / 314
 
     if pos_p >= neg_p:
         pos += 1
